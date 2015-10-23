@@ -3,9 +3,9 @@ val akkaStreamsTestkit = "com.typesafe.akka" %% "akka-stream-testkit-experimenta
 
 lazy val test_streams = (project in file(".")).settings(
   organization := "de.mixas",
-  name := "test-streams",
+  name := "test-streams-example1",
   version := "0.1",
   scalaVersion := "2.11.7",
-  libraryDependencies ++=Seq(akkaStreams, akkaStreamsTestkit),
+  libraryDependencies ++= Seq(akkaStreams, akkaStreamsTestkit),
   scalacOptions ++= Seq("-feature")
 )
